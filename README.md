@@ -11,4 +11,4 @@
 ## Features:
 - Custom Swap Widget for Base Network (Uniswap Core SDK & Smart Order Router)
 - Custom PFP Generator
-  - Resizable/draggable hats can be placed on PFPs (Fabric.js)
+  - Resizable/draggable hats can be placed on PFP canvas (Fabric.js)
