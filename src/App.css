@@ -1,0 +1,944 @@
+@font-face {
+  font-family: 'RuneScape UF';
+  src: url('RuneScape-Plain-12.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'rsbold';
+  src: url('RuneScape-Bold-12.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'quill';
+  src: url('RuneScape-Quill.otf') format('opentype');
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 3%;
+  color: rgb(230, 158, 16);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  width: 50%;
+  height: 10%;
+  left: 35%;
+  z-index: 99999;
+  gap: 10px;
+}
+
+.twicon {
+  margin-right: 20px;
+}
+
+
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  cursor: url('./cursor.cur'), auto;
+  overflow-x: hidden;
+}
+
+.yew2{
+  position: absolute;
+  top: 28%;
+  right: -20%;
+  z-index: -1;
+  width: 50%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 18
+}
+
+.willow{
+  position: absolute;
+  top: 82%;
+  right: -30%;
+  z-index: -1;
+  width: 50%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 19;
+  height: 50%;
+}
+
+.willow img{
+  max-height: 100%;
+  width: auto;
+}
+
+.durial {
+  position: absolute;
+  left: 79.5%;
+  top: 95%;
+  height: 50%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 24;
+}
+
+.durial img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+
+.haitus {
+  position: absolute;
+  left: 15%;
+  top: 0%;
+  height: 70vh; /* Set a height for the parent container */
+  cursor: url('./cursor.cur'), auto;
+  z-index: 20;
+  height: 100%;
+}
+
+.haitus img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.hill {
+  position: absolute;
+  left: 82%;
+  top: 45%;
+  height: 100vh; /* Set a height for the parent container */
+  cursor: url('./cursor.cur'), auto;
+  z-index: 21;
+}
+
+.hill img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.trio {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  cursor: url('./cursor.cur'), auto;
+  margin-top: 0%;
+  z-index: 19;
+  height: 35%;
+}
+
+.trio img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  z-index: -10;
+  width: auto;
+  margin-right: 20%;
+}
+
+.max {
+  position: absolute;
+  left: 28%;
+  top: 69%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 23;
+}
+
+.max img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.capy {
+  position: absolute;
+  left: 65%;
+  top: -3%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: -10;
+}
+
+.capy img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.bronze {
+  position: absolute;
+  left: 65%;
+  top: 2%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 6;
+}
+
+.bronze img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.noob {
+  position: absolute;
+  left: 85%;
+  top: -3%;
+  height: 150%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 4;
+}
+
+.noob img {
+  min-height: 40%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.waterfall {
+  position: absolute;
+  left: 43%;
+  top: -55%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: -10;
+}
+
+.waterfall img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.waterfall2 {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  height: 200vh;
+  cursor: url('./cursor.cur'), auto;
+  z-index: -10;
+}
+
+.waterfall2 img {
+  max-height: 200%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.scenery{
+  position: absolute;
+  left: 60%;
+  top: 0%;
+  height: 200vh;
+  cursor: url('./cursor.cur'), auto;
+  z-index: -10;
+}
+
+.scenery img {
+  max-height: 200%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.sand{
+  position: absolute;
+  left: 60%;
+  top: 63%;
+  height: 100vh;
+  cursor: url('./cursor.cur'), auto;
+  z-index: -10;
+}
+
+.sand img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.chaos {
+  position: absolute;
+  left: 74%;
+  top: -17%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 3;
+}
+
+.chaos img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.paper {
+  position: absolute;
+  left: 20%;
+  top: -4%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 0;
+}
+
+.paper img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: url('./cursor.cur'), auto;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+.rs-bold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'rsbold';
+  color: rgb(230, 158, 16);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  cursor: url('./cursor.cur'), auto;
+}
+
+.osrs-trade {
+  margin-top: 4%;
+  margin-left: 5%;
+  background-color: rgb(118, 117, 103);
+  color: #fff;
+  padding: 20px;
+  height: 550px;
+  width: 50%;
+  padding: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+  border-radius: 4px;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 15;
+}
+.osrs-trade-window {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(102, 92, 84);
+  height: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: url('./cursor.cur'), auto;
+}
+
+.osrs-trade-offers {
+  font-family: 'RuneScape UF';
+  color: rgb(230, 158, 16);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  cursor: url('./cursor.cur'), auto;
+}
+
+
+.osrs-offer:first-child {
+  border-right: 5px solid rgb(118, 117, 103);
+  border-top: 10px solid rgb(118, 117, 103);
+  padding: 10px;
+  width: 50%;
+  cursor: url('./cursor.cur'), auto;
+}
+
+.osrs-offer:last-child {
+  border-left: 5px solid rgb(118, 117, 103);
+  border-top: 10px solid rgb(118, 117, 103);
+  padding: 10px;
+  width: 50%;
+  cursor: url('./cursor.cur'), auto;
+}
+
+.offer-input,
+.offer-output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: url('./cursor.cur'), auto;
+}
+
+input {
+  caret-color: transparent;
+  height: 40px;
+  width: 40%;
+  border-radius: 6px;
+  border: none;
+  font-family: 'RuneScape UF';
+  background-color: rgb(178, 173, 138); /* Slightly adjusted for softer look */
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+  border: 1px solid rgb(98, 98, 90); /* Slightly lighter for a softer edge */
+  padding-top: 5px;
+  box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.2), /* Soft dark shadow */
+  inset -1px -1px 4px rgba(0, 0, 0, 0.5); /* Soft light shadow */
+  cursor: url('./cursor.cur'), auto;
+}
+
+input:focus {
+  outline: none;
+  cursor: url('./cursor.cur'), auto;
+}
+
+input::placeholder {
+  color: blue;
+  font-size: 20px;
+  cursor: url('./cursor.cur'), auto;
+}
+
+.offer-input:focus::placeholder {
+  color: transparent;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.0); /* Softer text shadow */
+  cursor: url('./cursor.cur'), auto;
+}
+
+input[value$='*'] {
+  color: rgb(32, 32, 255);
+  cursor: url('./cursor.cur'), auto;
+}
+
+
+
+label {
+  margin-left: 7px;
+  color: rgb(230, 158, 16);
+  cursor: url('./cursor.cur'), auto;
+}
+
+.osrs-trade-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 30%; /* Adjust this value to move up the buttons from the bottom */
+  transform: translateX(-50%); /* Center the action buttons horizontally */
+  width: 100%; /* Full width to center the buttons */
+  gap: 50px;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 9999;
+}
+
+.osrs-trade-actions button {
+  z-index: 9999;
+}
+
+.accept-button,
+.decline-button {
+  background-color: black;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  border: 10px solid rgb(118, 117, 103);
+  font-family: 'RuneScape UF';
+  font-size: 18px;
+  width: 120px;
+  letter-spacing: 1px;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 9999;
+}
+
+.accept-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  cursor: url('./cursor.cur'), auto;
+}
+
+.decline-button {
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: red;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 9999;
+}
+
+.accept-button {
+  color: green;
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: url('./cursor.cur'), auto;
+}
+
+.wallet-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #666;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  cursor: url('./cursor.cur'), auto;
+}
+
+.connect-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #666;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  cursor: url('./cursor.cur'), auto;
+  color: rgb(230, 158, 16);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  font-family: 'rsbold';
+  border-radius: 20px;
+  z-index: 9999;
+  font-size: 24px;
+}
+
+
+.gif-overlay {
+  position: absolute; /* absolute position to stay in place during scrolling */
+  top: 111%;
+  left: 15%;
+  width: 20%; /* Full width */
+  height: 100%; /* Full height */
+  display: flex;
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  z-index: 99999; /* High z-index to ensure it is on top of other content */
+  cursor: url('./cursor.cur'), auto;
+}
+
+.gif-overlay img {
+  max-width: 100%; /* Max width for the image to ensure it is responsive */
+  max-height: 100%; /* Max height for the image to ensure it is responsive */
+  margin: auto; /* Additional centering for the image */
+  cursor: url('./cursor.cur'), auto;
+  z-index: 99999;
+}
+/* Make sure to add responsiveness and additional styles as needed */
+
+
+
+
+
+
+
+.zulrah {
+  position: absolute;
+  left: -1%;
+  top: 30%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 13;
+}
+
+.zulrah img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.bandos {
+  position: absolute;
+  left: 4%;
+  top: 53%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 21;
+}
+
+.bandos img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.jelly {
+  position: absolute;
+  left: -3%;
+  top: 95%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 12;
+}
+
+.jelly img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.dragon {
+  position: absolute;
+  left: -3%;
+  top: 90%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 24;
+}
+
+.dragon img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.kraken {
+  position: absolute;
+  left: -10%;
+  top: -24%;
+  height: 80%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: 0;
+}
+
+.kraken img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.edmond {
+  position: absolute;
+  left: -20%;
+  top: 42%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: -1;
+}
+
+.edmond img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.edmond2 {
+  position: absolute;
+  left: -16%;
+  top: -26%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: -1;
+}
+
+.edmond2 img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.edmond3 {
+  position: absolute;
+  left: -16%;
+  top: 81%;
+  height: 100%;
+  cursor: url('./cursor.cur'), auto;
+  z-index: -1;
+}
+
+.edmond3 img {
+  max-height: 100%; /* Set the max-height relative to the parent */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+
+@media screen and (min-height: 1300px) {
+  .edmond3, .edmond2, .edmond{
+    scale: 1.5;
+    left: 10%;
+  }
+
+  .edmond {
+    top: -5%;
+  }
+
+  .edmond3{
+    top: 62%;
+  }
+
+  .haitus {
+    left: 23%;
+  }
+
+  .bandos{
+    left: 20%;
+    top: 40%;
+  }
+
+  .zulrah {
+    left: 10%;
+    z-index: 9;
+  }
+
+  .kraken {
+    left: 3%;
+    top: -23%;
+    scale: 1.2;
+  }
+
+  .dragon {
+    top: 65%;
+    left: 10%;
+  }
+
+  .jelly {
+    top: 77%;
+    left: 3%;
+    z-index: 10;
+  }
+
+  .waterfall{
+    top: -20%;
+  }
+
+  .yew2{
+    top: 34%;
+    left: 67%;
+  }
+
+  .capy{
+    top: 0%;
+    left: 65%;
+  }
+
+  .osrs-trade{
+    width: 40%;
+  }
+
+  .paper {
+    left: 30%;
+  }
+
+  .noob {
+    left: 75%;
+    top: 0%;
+  }
+
+  .bronze {
+    top: 15%;
+    left: 65%;
+  }
+
+  .chaos {
+    top: 13%;
+    left: 74%;
+    scale: 1.5;
+  }
+
+  .sand{
+    scale: 1.2;
+    top: 45.5%;
+  }
+
+  .durial {
+    top: 60%;
+    left: 75%;
+  }
+
+  .willow {
+    top: 50%;
+    left: 84.5%;
+  }
+
+  .hill {
+    top: 30%;
+    left: 82%
+  }
+
+  .waterfall2{
+    top: 70%;
+    scale: 1.5;
+  }
+
+  .trio{
+    top: 38%;
+    height: 30%;
+    left: 46%;
+  }
+
+  .App {
+    width: 100%;
+    margin-left: 1%;
+  }
+}
+
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 0.5%;
+  margin-left: 12%;
+  border: 1px solid black;
+  background-color: rgb(102, 92, 84);
+  border: 10px solid rgb(118, 117, 103);
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+  cursor: url('./cursor.cur'), auto;
+  z-index: 22;
+  padding: 20px;
+  color: rgb(230, 158, 16);
+  cursor: url('./cursor.cur'), auto;
+  font-family: 'rsbold';
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  line-height: 20px;
+  font-size: 24px;
+}
+
+.details > h2 {
+  font-family: 'quill';
+  font-size: 54px;
+}
+
+.details > h3 {
+  font-family: 'quill';
+  font-size: 54px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .icons {
+    left: 10px;
+  }
+
+  .tokenomics {
+    width: 110%;
+  }
+  .edmond3, .edmond2, .edmond{
+    scale: 1.5;
+    left: 10%;
+    display: none;
+  }
+
+  .edmond {
+    top: -5%;
+  }
+
+  .edmond3{
+    top: 62%;
+  }
+
+  .haitus {
+    left: 23%;
+    display: none;
+  }
+
+  .bandos{
+    left: 20%;
+    top: 40%;
+    display: none;
+  }
+
+  .zulrah {
+    left: 10%;
+    z-index: 9;
+    display: none;
+  }
+
+  .kraken {
+    left: 3%;
+    top: -23%;
+    scale: 1.2;
+    display: none;
+  }
+
+  .dragon {
+    top: 65%;
+    left: 10%;
+    display: none;
+  }
+
+  .jelly {
+    top: 77%;
+    left: 3%;
+    z-index: 10;
+    display: none;
+  }
+
+  .waterfall{
+    top: -20%;
+    display: none;
+  }
+
+  .yew2{
+    top: 34%;
+    left: 67%;
+    display: none;
+  }
+
+  .capy{
+    top: 0%;
+    left: 65%;
+    display: none;
+  }
+
+  .osrs-trade{
+    width: 100%;
+  }
+
+  .max {
+    display: none;
+  }
+
+  .scenery {
+    display: none;
+  }
+
+  .paper {
+    left: 30%;
+    display: none;
+  }
+
+  .noob {
+    left: 75%;
+    top: 0%;
+    display: none;
+  }
+
+  .bronze {
+    top: 15%;
+    left: 65%;
+    display: none;
+  }
+
+  .chaos {
+    top: 13%;
+    left: 74%;
+    scale: 1.5;
+    display: none;
+  }
+
+  .sand{
+    scale: 1.2;
+    top: 45.5%;
+    display: none;
+  }
+
+  .durial {
+    top: 60%;
+    left: 75%;
+    display: none;
+  }
+
+  .willow {
+    top: 50%;
+    left: 84.5%;
+    display: none;
+  }
+
+  .hill {
+    top: 30%;
+    left: 82%;
+    display: none;
+  }
+
+  .waterfall2{
+    top: 70%;
+    scale: 1.5;
+    display: none;
+  }
+
+  .trio{
+    top: 38%;
+    height: 30%;
+    left: 46%;
+    display: none;
+  }
+
+  .App {
+    width: 100%;
+    margin-left: 1%;
+  }
+}

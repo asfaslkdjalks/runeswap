@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'RuneScape UF';
+    src: url('RuneScape-Plain-12.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'rsbold';
+    src: url('RuneScape-Bold-12.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'quill';
+    src: url('RuneScape-Quill.otf') format('opentype');
+  }
+
+
+.pfp-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 0.5%;
+    margin-left: 12%;
+    border: 1px solid black;
+    background-color: rgb(102, 92, 84);
+    border: 10px solid rgb(118, 117, 103);
+    border-radius: 6px;
+    gap: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    cursor: url('./cursor.cur'), auto;
+    z-index: 22;
+  }
+  
+  .nft-canvas {
+    border: 10px solid rgb(118, 117, 103);
+    cursor: url('./cursor.cur'), auto;
+  }
+  
+  
+  .sticker-panel {
+    display: flex;
+    gap: 10px; /* Adds space between stickers */
+    flex-wrap: wrap; /* Allows stickers to wrap on smaller screens */
+    border: 1px solid blue;
+    padding: 10px;
+    cursor: url('./cursor.cur'), auto;
+  }
+  
+  .sticker {
+    width: 100px; /* Set a uniform width for all stickers */
+    cursor: pointer; /* Indicates these are draggable */
+    transition: transform 0.2s; /* Smooth scaling effect on hover */
+    max-width: 100px;
+    min-height: 100px;
+    cursor: url('./cursor.cur'), auto;
+  }
+  
+  .sticker:hover {
+    transform: scale(1.1); /* Slightly enlarges sticker on hover */
+    cursor: url('./cursor.cur'), auto;
+  }
+
+  .title {
+    font-family: 'quill';
+    color: rgb(230, 158, 16);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    font-size: 54px;
+    cursor: url('./cursor.cur'), auto;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+.headshot-controls{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    cursor: url('./cursor.cur'), auto;
+}
+
+.next {
+    font-family: 'rsbold';
+    height: 30px;
+    width: 10%;
+    background-color: rgb(102, 92, 84);
+    border: 2px solid #000; /* Bold border for that early 2000s effect */
+    color: white;
+    border-radius: 4px; /* Early 2000s buttons were often square, but sometimes had slight rounding */
+    box-shadow: 
+      inset 1px 1px 0px #ffffff62, /* Top-left inner highlight */
+      inset -1px -1px 0px #0000004b, /* Bottom-right inner shadow for a beveled effect */
+      0 0 1px #00000042; /* Soft outer shadow for depth */
+    cursor: pointer;
+    margin: 10px;
+    position: relative; /* For the pseudo-elements */
+    text-align: center;
+    user-select: none; /* Prevent text selection */
+    font-weight: bold; /* Bold font for the text */
+    color: rgb(230, 158, 16);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    cursor: url('./cursor.cur'), auto;
+  }
+  
+  /* Slight change in color on hover to give interactive feedback */
+  .next:hover {
+    background-color: rgb(122, 112, 104);
+    cursor: url('./cursor.cur'), auto;
+  }
+  
+  /* Simulate the button being pressed on active */
+  .next:active {
+    box-shadow: 
+      inset 1px 1px 2px #000, /* Reversing the shadow for pressed effect */
+      inset -1px -1px 2px #fff; /* Reversing the highlight for pressed effect */
+      color: rgb(230, 158, 16);
+      cursor: url('./cursor.cur'), auto;
+  }
+  
+  /* After the button to enhance the 3D effect with a pseudo-element */
+  .next:after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Align to the bottom of the button */
+    left: 0;
+    width: 100%;
+    height: 4px; /* The thickness of the 3D effect */
+    border-radius: 0 0 4px 4px; /* Match the border-radius of the button */
+    cursor: url('./cursor.cur'), auto;
+  }
+  
+  canvas {
+    cursor: url('./cursor.cur'), auto;
+  }
+
+  img {
+    cursor: url('./cursor.cur'), auto;
+  }
+
+  @media screen and (min-height: 1300px) {
+    .pfp-generator{
+        width: 40%;
+    }
+
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .pfp-generator{
+        width: 100%;
+    }
+  }
+  
