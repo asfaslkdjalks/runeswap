@@ -1,4 +1,4 @@
-# Landing page for $RSGP
+# Landing page for RSGP ERC20 Token
 - `npm install`
 - `npm start`
 
