@@ -8,8 +8,8 @@ const networkParams = {
     chainId: BASE_CHAIN_ID_HEX, // A 0x-prefixed hexadecimal string
     chainName: 'Base',
     nativeCurrency: {
-        name: 'Wrapped Ethereum',
-        symbol: 'WETH', // Typically 2-4 characters long
+        name: 'Ethereum',
+        symbol: 'ETH', // Typically 2-4 characters long
         decimals: 18,
     },
     rpcUrls: [ALCHEMY_URL],
