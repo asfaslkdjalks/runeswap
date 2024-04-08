@@ -9,7 +9,7 @@ import whatGif from './what.gif'
 // Constants
 const CHAIN_ID = 8453;
 const TOKEN_B_ADDRESS = '0x7b72bf38b06969a0989cb4ff8888484f4fc59883';
-const tokenB = new Token(CHAIN_ID, TOKEN_B_ADDRESS, 18, 'SPORTS', 'Sports Car');
+const tokenB = new Token(CHAIN_ID, TOKEN_B_ADDRESS, 18, 'RSGP', 'Runescape GP');
 
 function SwapWidget() {
     const [provider, setProvider] = useState(null);
